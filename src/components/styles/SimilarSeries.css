@@ -1,0 +1,18 @@
+.similarSeries-container {
+    max-width: 1800px;
+    margin: 0 auto;
+    display: grid;
+    grid-auto-rows: auto;
+    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+    padding: 0 50px;
+    gap: 20px;
+}
+
+.similarSeries-img {
+    width: 220px;
+    cursor: pointer;
+}
+
+.similarSeries-Section {
+    margin: 60px 0;
+}

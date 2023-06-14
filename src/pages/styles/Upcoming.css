@@ -1,0 +1,99 @@
+@import "slick-carousel/slick/slick.css";
+@import "slick-carousel/slick/slick-theme.css";
+
+.upcoming {
+    max-width: 1800px;
+    margin: 40px auto;
+    width: 85%;
+}
+
+.imgUpcoming {
+    width: 190px;
+    margin: 0 auto;
+    cursor: pointer;
+
+}
+
+.titleUp {
+    text-align: center;
+    color: white;
+    font-size: 35px;
+    font-weight: lighter;
+    margin-top: 70px;
+    margin-bottom: 70px;
+    padding-top: 90px;
+}
+
+.slide {
+    transform: scale(0.9);
+    transition: transform 700ms;
+    opacity: 0.7;
+}
+
+.activeSlide {
+    transform: scale(1.1);
+    opacity: 1;
+
+}
+
+.arrow {
+    background-color: transparent;
+    color: white;
+    position: absolute;
+    cursor: pointer;
+    z-index: 10;
+    padding: 10px;
+    font-size: 30px;
+}
+
+.next {
+    right: -3%;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.prev {
+    left: -3%;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.infoUp {
+    color: white;
+    text-align: center;
+
+}
+
+.infoUp h3 {
+    font-size: 25px;
+    font-weight: lighter;
+    margin-bottom: 0;
+}
+
+.infoUp P {
+    font-size: 21px;
+}
+
+@media(max-width: 1150px) {
+    .imgUpcoming {
+        width: 170px;
+    }
+}
+
+@media(max-width: 650px) {
+    .imgUpcoming {
+        width: 130px;
+    }
+}
+
+@media(max-width: 490px) {
+    .imgUpcoming {
+        width: 100px
+    }
+}
+
+@media(max-width: 370px) {
+    .imgUpcoming {
+        width: 85px;
+    }
+}

@@ -1,0 +1,74 @@
+.profile {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    align-items: center;
+    gap: 30px;
+    padding: 20px 50px;
+    max-width: 1400px;
+    margin: 0 auto;
+
+}
+
+.celebrityImg {
+    width: 300px;
+    border-radius: 10px;
+}
+
+.celebrityName {
+    color: white;
+    font-weight: lighter;
+    font-size: 35px;
+}
+
+.biography {
+    color: white;
+    font-weight: lighter;
+    font-size: 18px;
+}
+
+.placeB {
+    color: #f1842b;
+    font-size: 18px;
+}
+
+.placeB span {
+    color: white;
+}
+
+.birthday {
+    color: #f1842b;
+    font-size: 18px;
+}
+
+.birthday span {
+    color: white;
+}
+
+.deathday {
+    color: #f1842b;
+    font-size: 18px;
+}
+
+.deathday span {
+    color: white;
+}
+
+
+@media(max-width: 1000px) {
+    .profile {
+        flex-direction: column;
+    }
+
+    .celebrityImg {
+        width: 200px;
+    }
+
+    .celebrityName {
+        text-align: center;
+    }
+
+    .biography {
+        text-align: center;
+    }
+}

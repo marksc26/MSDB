@@ -1,0 +1,102 @@
+.actors-container {
+    margin: 100px 0;
+    padding: 0 50px;
+}
+
+.listActors {
+    display: grid;
+    grid-auto-rows: auto;
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    justify-items: center;
+    gap: 20px;
+    max-width: 1800px;
+    margin: 0 auto;
+}
+
+.image-name {
+    position: relative;
+}
+
+.image-name h3 {
+    position: absolute;
+    top: 160px;
+    left: 5px;
+    font-size: 18px;
+    color: white;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.95);
+    font-weight: lighter;
+}
+
+.actors {
+    width: 150px;
+    border-radius: 10px;
+    cursor: pointer;
+
+}
+
+.buttons {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+}
+
+.button-load {
+    cursor: pointer;
+    width: 120px;
+    height: 35px;
+    border-radius: 20px;
+    border: none;
+    font-family: 'Bellefair', serif;
+    font-size: 18px;
+    background-color: #ff7e11;
+    color: white;
+    margin: 22px 0;
+}
+
+.button-load:hover {
+    background-color: #f1842b;
+}
+
+.form-container {
+    display: flex;
+    flex-direction: row;
+    width: 250px;
+    height: 30px;
+    background-color: white;
+    padding: 5px;
+    margin-top: 10px;
+    border-radius: 5px;
+}
+
+.form-container button {
+    background-color: white;
+    color: gray;
+    font-size: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    cursor: pointer;
+}
+
+.form-container input {
+    width: 210px;
+    padding-left: 10px;
+    border: none;
+
+}
+
+.form-container input:focus {
+    outline: none;
+}
+
+.title-actors {
+    color: white;
+    font-weight: lighter;
+    text-align: center;
+    margin-bottom: 25px;
+    font-size: 35px;
+    padding-top: 90px;
+}

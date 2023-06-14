@@ -1,0 +1,37 @@
+.titleGenre {
+    font-size: 35px;
+    margin-top: 50px;
+    font-weight: lighter;
+    color: white;
+    text-align: center;
+}
+
+.movieGenre-container {
+    display: grid;
+    grid-auto-rows: auto;
+    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+    padding: 0 50px;
+    gap: 20px;
+    max-width: 1800px;
+    margin: 0 auto;
+}
+
+.movieGenre-Img {
+    cursor: pointer;
+    width: 220px;
+}
+
+.movieGenre-poster {
+    justify-self: center;
+}
+
+@media(max-width: 560px) {
+    .movieGenre-container {
+        padding: 0 25px;
+
+    }
+
+    .movieGenre-Img {
+        width: 180px;
+    }
+}

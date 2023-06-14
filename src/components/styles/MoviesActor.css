@@ -1,0 +1,16 @@
+.movies-act-container {
+    display: grid;
+    grid-auto-rows: auto;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    padding: 50px;
+    gap: 20px;
+}
+
+.movies-actor-div {
+    justify-self: center;
+}
+
+.img-movies-actor {
+    width: 200px;
+    cursor: pointer;
+}

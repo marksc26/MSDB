@@ -1,0 +1,70 @@
+.in-theaters {
+    margin: 0 auto;
+    max-width: 1800px;
+}
+
+.list {
+    display: grid;
+    grid-auto-rows: auto;
+    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+    justify-items: center;
+    gap: 40px;
+    max-width: 1800px;
+    margin: 30px auto;
+    scroll-behavior: smooth;
+    padding: 0 40px;
+}
+
+.title-list {
+    text-align: center;
+    color: white;
+    font-size: 35px;
+    font-weight: lighter;
+    margin: 0;
+
+}
+
+.image-container img {
+    width: 220px;
+    cursor: pointer;
+}
+
+.input-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 50px 0 30px;
+}
+
+
+
+.input-search {
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    width: 250px;
+    height: 30px;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+.input-search input {
+    width: 210px;
+    border: none;
+    padding-left: 10px;
+}
+
+.input-search input:focus {
+    outline: none;
+}
+
+.input-search button {
+    background-color: white;
+    font-size: 25px;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    color: gray;
+
+}

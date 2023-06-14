@@ -1,0 +1,41 @@
+.similar-container {
+    display: grid;
+    grid-auto-rows: auto;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 20px;
+    padding: 20px 50px;
+
+}
+
+.similar-container h3 {
+    text-align: center;
+    color: white;
+    font-size: 35px;
+    font-weight: lighter;
+    margin: 40px 0;
+
+}
+
+.poster-sim-cont {
+    cursor: pointer;
+    justify-self: center;
+    align-self: center;
+}
+
+.poster-sim-cont img {
+    width: 200px;
+    transition: all 600ms ease;
+
+}
+
+.poster-sim-cont img:hover {
+    transform: translateY(-1.5px);
+}
+
+.recommendations {
+    text-align: center;
+    color: white;
+    font-size: 35px;
+    font-weight: lighter;
+    margin: 40px 0;
+}

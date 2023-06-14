@@ -1,0 +1,32 @@
+.serieGenre-container {
+    display: grid;
+    grid-auto-rows: auto;
+    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+    gap: 20px;
+    padding: 0 50px;
+    max-width: 1800px;
+    margin: 0 auto;
+
+}
+
+.serie-genre {
+    justify-self: center;
+    align-self: center;
+}
+
+
+.serieGenre-Img {
+    width: 220px;
+    cursor: pointer;
+}
+
+@media(max-width: 560px) {
+    .serieGenre-container {
+        padding: 0 25px;
+
+    }
+
+    .serieGenre-Img {
+        width: 180px;
+    }
+}

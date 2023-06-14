@@ -1,0 +1,16 @@
+body {
+    margin: 0;
+    font-family: 'Bellefair', serif;
+    background-color: black;
+    position: relative;
+    padding-bottom: 140px;
+    min-height: 100vh;
+
+}
+
+
+
+* ::after ::before {
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
