@@ -3,7 +3,7 @@
     left: 50%;
     transform: translateX(-50%);
     transition: all 1500ms ease-in-out;
-    top: 11%;
+    top: 70px;
 
 }
 
@@ -39,16 +39,4 @@
     font-size: 19px;
     margin: 0;
 
-}
-
-@media(min-width: 1600px) {
-    .scrollContainer {
-        top: 8%;
-    }
-}
-
-@media(max-width: 1100px) {
-    .scrollContainer {
-        top: 13%;
-    }
 }
