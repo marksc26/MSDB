@@ -4,6 +4,9 @@ import axios from 'axios'
 import Header from '../layout/Header'
 import Footer from '../layout/Footer'
 import { useNavigate } from 'react-router-dom'
+import { useDispatch } from 'react-redux'
+import ScrollY from '../layout/ScrollY'
+import { setScrollGlobal } from '../store/slices/scroll.slice'
 
 const TvSeries = () => {
 
@@ -80,6 +83,23 @@ const TvSeries = () => {
     }, [])
 
 
+    const dispatch = useDispatch()
+    useEffect(() => {
+
+        function handleScroll() {
+            dispatch(setScrollGlobal(window.scrollY))
+        }
+
+        window.addEventListener("scroll", handleScroll)
+
+        return () => {
+            window.removeEventListener("scroll", handleScroll)
+        }
+
+
+    }, [])
+
+
     const searchSeries = (e) => {
         e.preventDefault()
         if (searchKey) {
@@ -95,6 +115,8 @@ const TvSeries = () => {
     const handleSerie = (serieId) => {
         navigate(`/serie/${serieId}`)
     }
+
+
 
 
     return (
@@ -131,6 +153,10 @@ const TvSeries = () => {
                     ))
                 }
             </div>
+
+
+            <ScrollY />
+
 
             <Footer />
 

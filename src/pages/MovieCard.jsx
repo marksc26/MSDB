@@ -7,6 +7,7 @@ import Footer from "../layout/Footer"
 import SimilarMovies from '../components/SimilarMovies'
 import Youtube from 'react-youtube'
 import moment from "moment"
+import black from '../assets/images/black.jpg'
 
 
 
@@ -24,6 +25,7 @@ const MovieCard = () => {
   const [info, setInfo] = useState(true)
   const [cast, setCast] = useState([])
   const [showCast, setShowCast] = useState(true)
+  const [alert, setAlert] = useState("")
 
 
   //! Este Effect funciona para cuando accede a otra ruta 
@@ -47,9 +49,13 @@ const MovieCard = () => {
       }
     })
 
-    setTrailer(data.videos.results.find(video => video.name === 'Official Trailer') || data.videos.results.find(video => video.type === 'Trailer'))
-
+    setTrailer(data.videos.results.find(video => video.name === 'Official Trailer')
+      || data.videos.results.find(video => video.type === 'Trailer'))
     setMovie(data)
+
+
+
+
 
 
   }
@@ -95,8 +101,15 @@ const MovieCard = () => {
 
 
   const handleButtonTrailer = () => {
-    setShowVideo(true)
-    window.scrollTo(0, 0)
+    if (trailer) {
+      setShowVideo(true)
+      window.scrollTo(0, 0)
+
+    } else {
+      window.alert("We're sorry, trailer not available.")
+    }
+
+
   }
 
   const handleClose = () => {
@@ -115,12 +128,14 @@ const MovieCard = () => {
   return (
     <section>
       <Header />
+
+
       <div className="imageContainer">
         {
-          movie.backdrop_path && (
+          movie.backdrop_path ? (
 
             <img className="image-background" src={`${IMAGE_PATH}${movie.backdrop_path}`} alt="" />
-          )
+          ) : (<img className='background' src={black} />)
         }
         <div className="overlay"></div>
         {

@@ -1,0 +1,42 @@
+.scrollContainer {
+    position: fixed;
+    left: 50%;
+    transform: translateX(-50%);
+    transition: all 1500ms ease-in-out;
+    top: 11%;
+
+}
+
+.hide {
+    position: fixed;
+    left: 50%;
+    transform: translateX(-50%);
+    transition: all 1500ms ease-in-out;
+    top: -100%;
+
+}
+
+.buttonScroll {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+    background: rgb(223, 7, 0);
+    background: linear-gradient(106deg, rgba(223, 7, 0, 1) 0%, rgba(253, 125, 17, 1) 53%, rgba(253, 183, 17, 1) 100%);
+    padding: 5px 8px;
+    border-radius: 10px;
+    cursor: pointer;
+
+}
+
+
+.buttonScroll i {
+    font-size: 23px;
+}
+
+.buttonScroll p {
+    font-size: 19px;
+    margin: 0;
+
+}

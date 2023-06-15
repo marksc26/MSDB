@@ -4,6 +4,9 @@ import './styles/TopRated.css'
 import Header from '../layout/Header'
 import Footer from '../layout/Footer'
 import { useNavigate } from 'react-router-dom'
+import { useDispatch } from 'react-redux'
+import ScrollY from '../layout/ScrollY'
+import { setScrollGlobal } from '../store/slices/scroll.slice'
 
 const TopRated = () => {
 
@@ -72,7 +75,25 @@ const TopRated = () => {
 
     const handleMovie = (movieId) => {
         navigate(`/movie/${movieId}`)
+
     }
+
+    const dispatch = useDispatch()
+
+    useEffect(() => {
+
+        function handleScroll() {
+            dispatch(setScrollGlobal(window.scrollY))
+        }
+
+        window.addEventListener("scroll", handleScroll)
+
+        return () => {
+            window.removeEventListener("scroll", handleScroll)
+        }
+
+
+    }, [])
 
     return (
         <section className='topContainer'>
@@ -89,6 +110,8 @@ const TopRated = () => {
                 }
 
             </div>
+
+            <ScrollY />
 
             <Footer />
 

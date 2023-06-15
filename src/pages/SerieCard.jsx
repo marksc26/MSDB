@@ -44,7 +44,7 @@ const SerieCard = () => {
         window.scrollTo(0, 0)
         setTimeout(() => {
             setInfo(false)
-        }, 700)
+        }, 800)
     }, [id])
 
 
@@ -64,7 +64,13 @@ const SerieCard = () => {
 
 
     const handleButtonTrailer = () => {
-        setShowVideo(true)
+        if (trailer) {
+            setShowVideo(true)
+            window.scrollTo(0, 0)
+        } else {
+            alert("We're sorry, trailer not available.")
+
+        }
 
     }
 

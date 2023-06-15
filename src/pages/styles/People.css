@@ -50,8 +50,9 @@
     border: none;
     font-family: 'Bellefair', serif;
     font-size: 18px;
-    background-color: #ff7e11;
-    color: white;
+    background: rgb(223, 7, 0);
+    background: linear-gradient(106deg, rgba(223, 7, 0, 1) 0%, rgba(253, 125, 17, 1) 53%, rgba(253, 183, 17, 1) 100%);
+    color: black;
     margin: 22px 0;
 }
 
