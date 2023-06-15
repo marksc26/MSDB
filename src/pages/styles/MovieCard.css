@@ -324,6 +324,10 @@
         right: 5%;
     }
 
+    .cast-container {
+        width: 30%;
+    }
+
 }
 
 @media(max-width: 1000px) {
@@ -397,6 +401,10 @@
     .average i {
         font-size: 16px;
         color: rgb(253, 253, 0);
+    }
+
+    .cast-container {
+        width: 40%;
     }
 
 
@@ -487,5 +495,15 @@
 
     }
 
+    .cast-container {
+        width: 55%;
+    }
 
+
+}
+
+@media(max-width: 400px) {
+    .cast-container {
+        width: 80%;
+    }
 }
